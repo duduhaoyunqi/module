@@ -1,0 +1,13 @@
+# variables yml format
+
+ec2_instances:
+  # Logi Report
+  - name: wpfblogirbrd01
+    ami: ami-09b1e8fc6368b8a3a
+    subnet_id: subnet-0bd4d44232932bbc3
+    type: t2.micro
+  - name: wpfblogirbrd02
+    ami: ami-09b1e8fc6368b8a3a
+    subnet_id: subnet-0bd4d44232932bbc3
+    type: t2.micro
+    
