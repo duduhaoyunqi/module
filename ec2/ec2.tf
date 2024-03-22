@@ -1,7 +1,7 @@
 locals {
   ec2_config_name      = "ec2.yml"
   ec2_config           = yamldecode(file("${path.module}/${local.ec2_config_name}"))
-  ec2_instances         = {for instance in local.ec2_config.ec2_instances: instance.name => instance}  # 遍历list
+  ec2_instances         = {for instance in local.ec2_config.ec2_instances: instance.name => instance}  # Terraform For expression
 }
 
 module "ec2_instance" {
